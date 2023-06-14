@@ -1,0 +1,11 @@
+<h1>Enviadas</h1>
+<div class="fila-tabla">
+    <div>Concepto</div>
+    <div>Importe</div>
+    <div>fecha</div>
+</div>
+<article class="fila-tabla" *ngFor="let transferencia of transferencias">
+    <div>{{transferencia.concepto}}</div>
+    <div>{{transferencia.importe | currency: 'EUR'}}</div>
+    <div>{{transferencia.fecha | date}}</div>
+</article>
